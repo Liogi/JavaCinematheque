@@ -3,8 +3,9 @@ package fr.cinematheque.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Category
+public class Category
 {
+
 	private String name, description;
 	private Integer categorySize;
 	private List<Movie> listMovie = new ArrayList<Movie>();
@@ -67,5 +68,13 @@ public abstract class Category
 	public void setMovie(List<Movie> movie)
 	{
 		this.listMovie = movie;
+	}
+	
+	public String toString()
+	{
+		return "Category's name: " + this.name + "\r\n\t"
+				 + "Category's description: " + this.description + "\r\n\t"
+				 + ((this.listMovie != null)? "The category contains: " + this.categorySize : "nothing");
+
 	}
 }

@@ -39,16 +39,6 @@ public class Movie
 		this.name = name;
 	}
 
-	public Date getRelease()
-	{
-		return release;
-	}
-
-	public void setRelease(Date release)
-	{
-		this.release = release;
-	}
-
 	public Producer getProducer()
 	{
 		return producer;
@@ -68,6 +58,17 @@ public class Movie
 	{
 		this.listActor = actor;
 	}
-	
 
+	public Date getRelease() {
+		return release;
+	}
+
+	public void setRelease(Date release) {
+		this.release = release;
+	}
+	
+	public String toString()
+	{
+		return this.name + " created in " + this.release + " by " + this.producer.toString();
+	}
 }

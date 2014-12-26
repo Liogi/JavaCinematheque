@@ -8,12 +8,12 @@ public class Actor
 	private Date birthday;
 	private Integer participatedMovie;
 	
-	public Actor(String name, String nationality, Date birthday, int participatedMovie)
+	public Actor(String name, String nationality, Date birthday)
 	{
-		createStructure(name, nationality, birthday, participatedMovie);
+		createStructure(name, nationality, birthday);
 	}
 	
-	public void createStructure(String name, String nationality, Date birthday, int participatedMovie)
+	public void createStructure(String name, String nationality, Date birthday)
 	{
 		this.name = name;
 		this.nationality = nationality;
@@ -59,5 +59,10 @@ public class Actor
 	public void setParticipatedMovie(Integer participatedMovie)
 	{
 		this.participatedMovie = participatedMovie;
+	}
+	
+	public String toString()
+	{
+		return this.name + " is born in " + this.nationality + " in " + this.birthday + " and played in " + this.participatedMovie + "\r\n";
 	}
 }
