@@ -1,0 +1,5 @@
+package fr.cinematheque.model;
+
+public class Person {
+
+}

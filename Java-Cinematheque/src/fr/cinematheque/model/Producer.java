@@ -4,52 +4,18 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Producer
+public class Producer extends Person
 {
-	private String name, nationality;
-	private Date birthday;
+
 	private List<Movie> listMovie = new ArrayList<Movie>();
 	
-	public Producer(String name, Date birthday, String nationality)
-	{
-		createStructure(name, birthday, nationality);
-	}
-	
-	public void createStructure(String name, Date birthday, String nationality)
-	{
-		this.name = name;
-		this.birthday = birthday;
-		this.nationality = nationality;
-	}
+
 	
 	public void createMovie(String name, Date release)
 	{
 		this.listMovie.add(new Movie(name, release, this));
 	}
 
-	public String getNationality() {
-		return nationality;
-	}
-
-	public void setNationality(String nationality) {
-		this.nationality = nationality;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public Date getBirthday() {
-		return birthday;
-	}
-
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
-	}
 	
 	public List<Movie> getMovie()
 	{
