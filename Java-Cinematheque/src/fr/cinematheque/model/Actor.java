@@ -63,6 +63,6 @@ public class Actor
 	
 	public String toString()
 	{
-		return this.name + " is born in " + this.nationality + " in " + this.birthday + " and played in " + this.participatedMovie + "\r\n";
+		return this.name + " is born in " + this.nationality + " in " + this.birthday + " and played in " + this.participatedMovie + " movie(s)";
 	}
 }

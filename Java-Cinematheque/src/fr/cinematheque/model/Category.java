@@ -74,7 +74,7 @@ public class Category
 	{
 		return "Category's name: " + this.name + "\r\n\t"
 				 + "Category's description: " + this.description + "\r\n\t"
-				 + ((this.listMovie != null)? "The category contains: " + this.categorySize : "nothing");
+				 + ((this.listMovie != null)? "The category contains: " + this.categorySize + " movie(s)": "nothing");
 
 	}
 }

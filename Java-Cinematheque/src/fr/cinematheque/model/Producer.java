@@ -63,13 +63,13 @@ public class Producer
 	
 	public String toString()
 	{
-		return "\r\nProducter: " + this.name + "\r\n\t He is born in " + this.nationality + " in " + this.birthday
-			   + "\r\n\tHe created " + ((this.listMovie != null)? this.listMovie.size() + allMovie() : "0 movie");
+		return "\r\nProducter:\r\n\t" + this.name + " is born in " + this.nationality + " in " + this.birthday
+			   + "\r\n\tHe created " + ((this.listMovie != null)? this.listMovie.size() + " movie(s): " + allMovie() : "0 movie");
 	}
 	
 	public String allMovie()
 	{
-		String str = null;
+		String str = new String();
 		for (Movie m : this.listMovie)
 		{
 			str += "\r\n\t"+ m.getName();
