@@ -9,7 +9,6 @@ import fr.cinematheque.model.Category;
 import fr.cinematheque.model.Cinematheque;
 import fr.cinematheque.model.Movie;
 import fr.cinematheque.model.Producer;
-import fr.cinematheque.model.Person;
 import fr.cinematheque.model.state.CinemathequeStateMachine;
 import fr.cinematheque.model.validation.ValidationException;
 

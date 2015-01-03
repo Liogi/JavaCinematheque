@@ -6,7 +6,10 @@ public abstract class Person {
 	public String name, nationality;
 	public Date birthday;
 	
-
+	public Person()
+	{
+	}
+	
 
 
 	public String getNationality()

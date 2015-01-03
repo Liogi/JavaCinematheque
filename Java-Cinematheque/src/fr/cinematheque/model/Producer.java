@@ -10,7 +10,17 @@ public class Producer extends Person
 	private List<Movie> listMovie = new ArrayList<Movie>();
 	
 
-	
+	public Producer(String name, String nationality, Date birthday) {
+		super(name, nationality, birthday);
+		
+		createStructure(name, nationality, birthday);
+}
+	public void createStructure(String name, String nationality, Date birthday, Integer participatedMOvie)
+	{
+		this.name = name;
+		this.nationality = nationality;
+		this.birthday = birthday;
+	}
 	public void createMovie(String name, Date release)
 	{
 		this.listMovie.add(new Movie(name, release, this));
