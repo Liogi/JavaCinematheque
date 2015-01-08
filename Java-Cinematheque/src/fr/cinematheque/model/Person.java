@@ -6,7 +6,11 @@ public abstract class Person {
 	public String name, nationality;
 	public Date birthday;
 	
-
+	public Person(String name, Date birthday, String nationality){
+		this.name = name;
+		this.birthday = birthday;
+		this.nationality = nationality;
+	}
 
 
 	public String getNationality()
@@ -38,5 +42,6 @@ public abstract class Person {
 	{
 		this.birthday = birthday;
 	}
+	
 
 }

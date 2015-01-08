@@ -7,18 +7,10 @@ public class Actor extends Person
 
 	private Integer participatedMovie;
 	
-	public Actor(int participatedMovie, String name, String nationality, Date birthday) {
-		super(name, nationality, birthday);
-		
-		createStructure(name, nationality, birthday, 0);
-}   
-	public void createStructure(String name, String nationality, Date birthday, Integer participatedMOvie)
-	{
-		this.name = name;
-		this.nationality = nationality;
-		this.birthday = birthday;
-		this.participatedMovie = ParticipatedMovie;
-	}
+	public Actor(String name, Date birthday, String nationality) {
+		super(name, birthday, nationality);
+		this.participatedMovie = 0;
+	}   
 	
 	public Integer getParticipatedMovie()
 	{
@@ -33,4 +25,6 @@ public class Actor extends Person
 	{
 		return this.name + " is born in " + this.nationality + " in " + this.birthday + " and played in " + this.participatedMovie + " movie(s)";
 	}
+
+
 }

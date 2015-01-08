@@ -16,7 +16,7 @@ public class Cinematheque implements IStateChangeable
 	
 	public Cinematheque()
 	{
-		state = ECinemathequeState.TRANSACTION_STARTED;
+		state = ECinemathequeState.CINEMATHEQUE_DEBUT_AJOUT;
 	}
 	
 	public int totalMovie()

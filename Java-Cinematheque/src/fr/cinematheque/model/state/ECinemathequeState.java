@@ -2,9 +2,9 @@ package fr.cinematheque.model.state;
 
 public enum ECinemathequeState
 {
-	TRANSACTION_ENDED(	"Transaction ended", 	null),
-	TRANSACTION_STARTED("Transaction started", 	TRANSACTION_ENDED),
-	TRANSACTION_NULL(	"Transaction null", 	TRANSACTION_STARTED);
+	CINEMATHEQUE_FIN_OPERATION(	"L'ajout à la cinémathèque s'est bien déroulé", 	null),
+	CINEMATHEQUE_DEBUT_AJOUT("Début de l'ajout à la cinémathèque", 	CINEMATHEQUE_FIN_OPERATION),
+	NO_OPERATION(	"Aucune opération en cours", 	CINEMATHEQUE_DEBUT_AJOUT);
 	
 	/** Following step */
 	private ECinemathequeState 		nextStepState;

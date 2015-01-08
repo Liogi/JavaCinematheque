@@ -35,17 +35,17 @@ public class Main {
 		Producer p3 = new Producer("Gamma", cal.getTime(), "Angleterre");
 		
 		cal.set(1963, 8, 14);
-		Actor a1 = new Actor("Joe", "Amerique", cal.getTime());
+		Actor a1 = new Actor("Joe", cal.getTime(), "Amerique");
 		cal.set(1979, 3, 12);
-		Actor a2 = new Actor("Eddy", "Amerique", cal.getTime());
+		Actor a2 = new Actor("Eddy", cal.getTime(), "Amerique");
 		cal.set(1988, 12, 25);
-		Actor a3 = new Actor("Amelie", "Hollande", cal.getTime());
+		Actor a3 = new Actor("Amelie", cal.getTime(), "Hollande");
 		cal.set(1981, 4, 1);
-		Actor a4 = new Actor("Steeve", "France", cal.getTime());
+		Actor a4 = new Actor("Steeve", cal.getTime(), "France");
 		cal.set(1969, 11, 29);
-		Actor a5 = new Actor("Fabrice", "Amerique", cal.getTime());
+		Actor a5 = new Actor("Fabrice", cal.getTime(), "Amerique");
 		cal.set(1974, 2, 6);
-		Actor a6 = new Actor("Laurent", "Amerique", cal.getTime());
+		Actor a6 = new Actor("Laurent", cal.getTime(), "Amerique");
 		
 		cal.set(2015, 5, 20);
 		p2.createMovie("Iron Noob", cal.getTime());
@@ -57,6 +57,7 @@ public class Main {
 		p2.createMovie("Iron Noob 2", cal.getTime());
 		cal.set(2019, 5, 20);
 		p2.createMovie("Iron Noob 3", cal.getTime());
+		p2.getName();
 		p2.getMovie().get(0).addActor(a1);
 		p2.getMovie().get(0).addActor(a5);
 		p2.getMovie().get(0).addActor(a6);
@@ -80,14 +81,14 @@ public class Main {
 		
 		System.out.println(c.toString());
 		
-		System.out.println("\r\nMain: try to change Order state...");
+		System.out.println("\r\nMain: Try to change state...");
 		try
 		{
 			CinemathequeStateMachine.changeStep(c);
 		}
 		catch (ValidationException e)
 		{
-			System.out.println("Main: CinemathequeStateMachine.changeStep() throws " + e.toString());
+			System.out.println("Main: CinemathequeStateMachine.changeStep() a retourné " + e.toString());
 		}
 		//a
 		c.addCategory(c1);
