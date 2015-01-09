@@ -4,7 +4,6 @@ import java.util.Date;
 
 public class Actor extends Person
 {
-
 	private Integer participatedMovie;
 	
 	public Actor(String name, Date birthday, String nationality) {

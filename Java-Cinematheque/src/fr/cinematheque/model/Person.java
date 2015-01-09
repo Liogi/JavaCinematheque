@@ -3,8 +3,8 @@ package fr.cinematheque.model;
 import java.util.Date;
 
 public abstract class Person {
-	public String name, nationality;
-	public Date birthday;
+	protected String name, nationality;
+	protected Date birthday;
 	
 	public Person(String name, Date birthday, String nationality){
 		this.name = name;
